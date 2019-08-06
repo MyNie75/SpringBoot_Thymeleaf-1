@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<h1>Hello</h1>
+		<h2><a  th:utext="${msg}">: 1212121</a></h2>
+		
+		
+		<table border="1">
+			<tr>
+               <th>ID</th>
+               <th>First Name</th>
+               
+            </tr>
+            <tr th:each ="depart : ${listdepart}">
+               <td th:utext="${depart.id}"></td>
+               <td th:utext="${depart.name}"></td>             
+            </tr>
+		 </table>
+</body>
+</html>
